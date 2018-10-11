@@ -1,0 +1,6 @@
+On landing, probe immediately retracts to highest position, making it impossible to obtain any curves.
+I tried manually moving the stage up using the SPM motor, but at no point could find an appropriate location for a curve.
+Perhaps there is artificial 'deflection' signal due to the sample optical properties?
+Next I turned off the trigger (0.5V max force) and adjusted manually moving motor up/down, and was able to find a decent curve location.
+This was on returning after finishing S6 with trigger, so the issue is with the sample not the AFM settings.
+Perhaps what's happening is the coating is unstable in water and is expanding or exfoliating in some way?

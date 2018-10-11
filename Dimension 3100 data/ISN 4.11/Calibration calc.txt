@@ -1,0 +1,12 @@
+Try to calibrate spring constant of Novascan 38 using CLFC1 at the ISN AFM
+Using the slope of the approach rather than retract curves
+On hard surface: (500 nm, -0.5V) to (250 nm, -1.148V), S_hard = 386 nm/V
+On soft surface: (1000 nm, -0.67V) to (521 nm, -1.128V), S_ref = 1046 nm/V
+Estimated length at which cantilever is touching is 75/84 pixels
+
+Using the formula from CLFC manual:
+k=k_ref * (S_ref/S_hard - 1) * (L/(L-dL))^3
+for CLFC 1 middle cantilever, S_ref = 1.831 N/m
+so k=1.831 * (1046/386 - 1) * (84/75)^3
+k = 4.4 N/m
+Given k = 3.7 N/m which is reasonably close to the measurement

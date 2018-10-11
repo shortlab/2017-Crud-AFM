@@ -1,0 +1,5 @@
+All curves done using Novascan 36 (R14 C15 confirmed)
+Microsphere confirmed before and after all curves, appearance of cantilever looked similar before and after, it is mostly delaminated but there is a piece of coating by the microsphere itself
+Same scale on oscilloscope and laser power and oscillation amplitude were kept throughout so images can be compared directly
+The x-scale on the oscilloscope represents actual actuator voltage, compare to maximum measured range to get conversion to nm
+The y-scale represents the FN voltage

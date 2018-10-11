@@ -1,0 +1,18 @@
+
+&inputpp
+  outdir='/home/mc7/quantum-expresso/Zr_Ni_2s',
+  prefix='calc',
+  filplot='/home/mc7/quantum-expresso/Zr_Ni_2s/charge.dat',
+  plot_num=0,
+/
+
+&plot
+  nfile=1,
+  filepp(1)='/home/mc7/quantum-expresso/Zr_Ni_2s/charge.dat',
+  iflag=3,
+  output_format=5,
+  e1(1)=1.0, e1(2)=0.0, e1(3)=0.0,
+  e2(1)=0.0, e2(2)=1.0, e2(3)=0.0,
+  e3(1)=0.0, e3(2)=0.0, e3(3)=1.0,
+  fileout='/home/mc7/quantum-expresso/Zr_Ni_2s/plot_unrelaxed.out',
+/

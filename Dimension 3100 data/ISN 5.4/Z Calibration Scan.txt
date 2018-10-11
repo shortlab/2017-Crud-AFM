@@ -1,0 +1,2 @@
+I scanned the calibration sample with Contact 6 probe in air
+measured height: 100nm, actual height: 113nm

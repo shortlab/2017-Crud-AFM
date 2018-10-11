@@ -1,0 +1,62 @@
+
+&CONTROL
+  calculation='scf',
+  outdir='/home/mc7/quantum-expresso/Zr_Pt3_Ni',
+  prefix='calc',
+  restart_mode='restart',
+  pseudo_dir='/home/mc7/quantum-expresso/espresso-5.2.1/pseudo',
+  verbosity='low',
+  tstress=.false.,
+  tprnfor=.false.,
+/
+
+&SYSTEM
+  ibrav=0,
+  celldm(1)=12.1600096664d0,
+  nat=15,
+  ntyp=3,
+  ecutwfc=40.0d0,
+  ecutrho=120.0d0,
+  input_dft='LDA',
+  occupations='smearing',
+  smearing='gaussian',
+  degauss=0.002000d0,
+/
+
+&ELECTRONS
+  diagonalization='david',
+  conv_thr=1d-06,
+  mixing_mode='plain',
+  mixing_beta=0.700d0,
+/
+
+ATOMIC_SPECIES
+  Ni 58.693400d0 Ni.pz-nd-rrkjus.UPF
+  Pt 195.078000d0 Pt.pz-nd-rrkjus.UPF
+  Zr 91.224000d0 Zr.blyp-sp-hgh.UPF
+
+ATOMIC_POSITIONS {alat}
+  Zr   0.2511033754d0   0.1449746014d0   0.1999867906d0
+  Zr   0.7511033754d0   0.1449746014d0   0.1999867906d0
+  Zr   0.0011033754d0   0.5779873033d0   0.1999867906d0
+  Zr   0.5011033754d0   0.5779873033d0   0.1999867906d0
+  Pt   0.0011033754d0   0.2880381005d0   0.5999603717d0
+  Pt   0.5011033754d0   0.2880381005d0   0.5999603717d0
+  Zr  -0.2488966246d0   0.7210508024d0   0.5999603717d0
+  Pt   0.2511033754d0   0.7210508024d0   0.5999603717d0
+  Ni  -0.0000027973d0   0.0000024865d0   0.9424572636d0
+  Ni   0.3571400599d0   0.1237204013d0   0.9424572636d0
+  Ni   0.7142829170d0   0.2474383161d0   0.9424572636d0
+  Ni   0.0714257741d0   0.3711562310d0   0.9424572636d0
+  Ni   0.4285686313d0   0.4948741458d0   0.9424572636d0
+  Ni  -0.2142885116d0   0.6185920606d0   0.9424572636d0
+  Ni   0.1428543456d0   0.7423099754d0   0.9424572636d0
+
+K_POINTS {automatic}
+  4 4 4 0 0 0
+
+CELL_PARAMETERS {alat}
+  1.000000000000d0  0.000000000000d0  0.000000000000d0
+  -0.500000000000d0  0.866025403784d0  0.000000000000d0
+  0.000000000000d0  0.000000000000d0  2.518768391683d0
+
